@@ -1,0 +1,64 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #000;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .hero-section {
+    height: 100vh;
+    background: radial-gradient(circle at center, #111 0%, #000 100%);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .content {
+    z-index: 2;
+    position: relative;
+    transition: transform 0.1s ease-out;
+  }
+  
+  .hero-title {
+    font-size: 4rem;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease-out forwards;
+    color: aqua;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease-out forwards;
+    animation-delay: 0.5s;
+  }
+  
+  .hero-btn {
+    margin-top: 30px;
+    padding: 12px 32px;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease-out forwards;
+    animation-delay: 1s;
+  }
+  
+  .hero-btn:hover {
+    background-color:#fff;
+    color: #000;
+    transform: scale(1.05);
+  }
+  
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  } 
